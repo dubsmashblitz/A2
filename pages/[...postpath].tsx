@@ -93,15 +93,15 @@ const Post: React.FC<PostProps> = (props) => {
 					property="og:image:alt"
 					content={post.featuredImage.node.altText}
 				/>
-				<title>{post.title}</title>
+				<title>{removeTags(post.title)}</title>
 			</Head>
 			<div className="post-container">
-				<h1>{post.title}</h1>
+				
 				<img
 					src={post.featuredImage.node.sourceUrl}
 					alt={post.featuredImage.node.altText}
 				/>
-				<article dangerouslySetInnerHTML={{ __html: post.content }} />
+				
 			</div>
 		</>
 	);

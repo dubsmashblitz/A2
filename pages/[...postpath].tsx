@@ -85,8 +85,8 @@ const Post: React.FC<PostProps> = (props) => {
 				<meta property="og:title" content={removeTags(post.title)} />
 				<link rel="canonical" href={`https://${host}/${path}`} />
 				<meta property="og:description" content={removeTags(post.excerpt)} />
-				<meta property="og:image:width" content={600} />
-				<meta property="og:image:height" content={600} />
+				<meta property="og:image:width" content="600" />
+				<meta property="og:image:height" content="600" />
 				<meta property="og:url" content={`https://${host}/${path}`} />
 				<meta property="og:type" content="article" />
 				<meta property="og:locale" content="en_US" />
